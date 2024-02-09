@@ -2,7 +2,6 @@ package nl.novi.javaprogrammeren.overerving;
 
 public class Cat extends DomesticAnimal {
 
-
     public CatType catType;
 
     public Cat(String name, char sex, String breed, String nameOwner, String favoriteFoodBrand, CatType catType) {
