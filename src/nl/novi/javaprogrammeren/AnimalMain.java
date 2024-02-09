@@ -1,6 +1,29 @@
 package nl.novi.javaprogrammeren;
 
+import nl.novi.javaprogrammeren.overerving.Animal;
+import nl.novi.javaprogrammeren.overerving.Cat;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class AnimalMain {
+
+    public static void main(String[] args) {
+        Cat Soro = new Cat("Soro", 'm', "Britste korthaar", "Nisar", "Katbrokjes", Cat.CatType.INSIDE);
+        Cat Blaf = new Cat("Blaf", 'm', "Britste korthaar", "Nisar", "Katbrokjes", Cat.CatType.INSIDE);
+        List<Animal> allAnimalList = new ArrayList<>();
+
+        allAnimalList.add(Soro);
+        allAnimalList.add(Blaf);
+
+        for (Animal animals : allAnimalList) {
+           animals.MakeSound();
+        }
+        System.out.println(Soro.getCatType() + "  " + Soro.getNameOwner() + Soro.getName());
+    }
+
+
+
     /*
     Het is traditie om overerving uit te leggen met behulp van dieren. Hier ontkomen jullie dus ook niet aan.
 
