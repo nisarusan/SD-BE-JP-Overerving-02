@@ -3,7 +3,6 @@ package nl.novi.javaprogrammeren.overerving;
 import java.time.DayOfWeek;
 
 public class Lion extends WildAnimals {
-
     int cubs;
 
     public Lion(String name, char sex, DayOfWeek lastFed, String birthCountry, String habitat, int cubs) {
